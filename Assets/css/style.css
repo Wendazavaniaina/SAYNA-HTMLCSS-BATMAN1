@@ -40,6 +40,14 @@ body {
     font-weight: 300;
 }
 
+.up-bar {
+    border-top: gray 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
 /* Navigation */
 nav {
     display: flex;
@@ -122,17 +130,17 @@ nav ul a:hover {
     justify-content: space-between;
 }
 
-#batman-cinema, #justice-league {
+#batman-cinema, #nemesis, #allies, #justice-league {
     margin-top: 40px;
 }
 
-#batman-cinema .titre, #justice-league .titre {
+#batman-cinema .titre, #nemesis .titre, #allies .titre, #justice-league .titre {
     font-weight: bold;
     text-transform: uppercase;
     margin: 30px 0;
 }
 
-#batman-cinema .description, #justice-league .description {
+#batman-cinema .description, #nemesis .description, #allies .description, #justice-league .description {
     margin-bottom: 40px;
     text-align: justify;
     width: 80%;
@@ -157,4 +165,137 @@ nav ul a:hover {
 #multimedia .slider-content {
     padding: 15px;
     background-color: gray;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia button {
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.btn-right {
+    right: -85%;
+}
+
+#multimedia p {
+    font-size: 14px;
+}
+
+#multimedia .yellow {
+    color: var(--yellow-color);
+}
+
+/* Contact - Formulaire */
+#contact {
+    background-color: darkslategray;
+    padding: 70px 0;;
+}
+
+#contact .form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+#contact .titre1 {
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email'], textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .icon img {
+    width: 20px;
+}
+
+#contact .news {
+    margin: 15px 0;
+    border-bottom: 2px solid gray;
+}
+
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-group label {
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    border-image: linear-gradient(
+        69deg, red, blue
+    ) 1;
+}
+
+.form input[type='radio'] {
+    opacity: 0;
+}
+
+input[type='submit'] {
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background : linear-gradient(
+        80deg, var(--gradient-white), var(--gradient-red)
+    )
+}
+
+/* Replique */
+#replique {
+    margin: 90px;
+}
+
+#replique .replique-carte {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#replique .replique-auteur {
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'Rajdhani';
+}
+
+#replique .guillemet-close {
+    float: right;
+}
+
+/* Footer */
+footer {
+    margin-top: 200px;
+}
+
+footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item {
+    padding: 15px;
 }
