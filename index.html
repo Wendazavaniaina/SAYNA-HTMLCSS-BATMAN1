@@ -20,27 +20,37 @@
     </header>
 
     <main>
+        <!--Réseaux sociaux - Scrolling-->
+        <div class="scroll">
+            <img src="./Assets/Logos/logo_bat_flèche.png" alt="">
+            <img class="social" src="./Assets/Logos/icon_facebook.png" alt="">
+            <img class="social" src="./Assets/Logos/icon_ig.png" alt="">
+            <img class="social" src="./Assets/Logos/icon_tw.png" alt="">
+            <img src="./Assets/Logos/logo_bat_flèche_2.png" alt="">
+        </div>
         <!--Première section - Hero - cta = call to action-->
         <section id="hero">
             <div class="container">
-                <p class="texte">
-                    Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les
-                    criminels de Gotham City. Il est vengeur. Il est la nuit.
-                </p>
-                <h2 class="titre">Il est Batman.</h2>
-                <div class="cta">
-                    <a href="#">VOIR LE HEROS</a>
-                    <a href="#">LES ADVERSAIRES</a>
+                <div class="content">
+                    <p class="texte">
+                        Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les
+                        criminels de Gotham City. Il est vengeur. Il est la nuit.
+                    </p>
+                    <h2 class="titre">Il est Batman.</h2>
+                    <div class="cta">
+                        <a class="btn" href="#batman-cinema">VOIR LE HEROS</a>
+                        <a class="btn" href="#nemesis">LES ADVERSAIRES</a>
+                    </div>
                 </div>
             </div>
-            <img src="./Assets/Logos/flèche_down_header.png" alt="Flèche down">
+            <img class="fleche" src="./Assets/Logos/flèche_down_header.png" alt="Flèche down">
         </section>
 
         <!--Section - Batman au cinéma-->
         <section id="batman-cinema">
             <div class="container">
-                <h1>BATMAN AU CINÉMA</h1>
-                <p>
+                <h1 class="titre">Batman au cinéma</h1>
+                <p class="description">
                     Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
                     dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le
                     comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros
@@ -51,21 +61,21 @@
                 <div class="bat-perso">
                     <div>
                         <img src="./Assets/Illustrations/Bathome2.png" alt="">
-                        <div>
+                        <div class="perso-info">
                             <h3>Robert Pattinson</h3>
                             <p>(2022)</p>
                         </div>
                     </div>
                     <div>
                         <img src="./Assets/Illustrations/Bathome3.png" alt="">
-                        <div>
+                        <div class="perso-info">
                             <h3>Christian Bale</h3>
                             <p>(2006 - 2008 - 2012)</p>
                         </div>
                     </div>
                     <div>
                         <img src="./Assets/Illustrations/Bathome4.png" alt="">
-                        <div>
+                        <div class="perso-info">
                             <h3>Ben Affleck</h3>
                             <p>(2016- 2017/2020 – 2023)</p>
                         </div>
@@ -75,7 +85,7 @@
         </section>
 
         <!--Section - Némésis-->
-        <section>
+        <section id="nemesis">
             <div class="container">
                 <div>
                     <h1>NÉMÉSIS</h1>
@@ -156,10 +166,10 @@
         </section>
 
         <!--Section - Justice league-->
-        <section>
+        <section id="justice-league">
             <div class="container">
-                <h1>JUSTICE LEAGUE</h1>
-                <p>
+                <h1 class="titre">Justice League</h1>
+                <p class="description">
                     Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils
                     doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne
                     sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de
@@ -167,31 +177,41 @@
                     surnaturelles menacent son existence.
                 </p>
             </div>
-            <img src="./Assets/Illustrations/Bathome11.png" alt="">
+            <img width="100%" src="./Assets/Illustrations/Bathome11.png" alt="">
         </section>
 
         <!--Section - Multimédia-->
-        <section>
+        <section id="multimedia">
             <div class="container">
                 <h1>MULTIMÉDIA</h1>
                 <div>
-                    <img src="./Assets/Logos/icon_flèche_1.png" alt="">
-                    <div>
-                        <img src="./Assets/Illustrations/Bathome_ba1.png" alt="">
-                        <h3>ACTION, ADVENTURE</h3>
-                        <h4>Batman Begins</h4>
-                        <p> IMDB : <span>8.2</span> </p><br> 
-                        <p>
-                            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
-                            traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
-                            guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
-                            Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
-                            la lutte contre le crime sous le nom de Batman.
-                        </p>
+                    <button class="btn-left">
+                        <img src="./Assets/Logos/icon_flèche_1.png" alt="">
+                    </button>
+                    <div class="slider-multimedia">
+                        <div class="slider-image">
+                            <img src="./Assets/Illustrations/Bathome_ba1.png" alt="">
+                        </div>
+                        <div class="slider-content">
+                            <h3>ACTION, ADVENTURE</h3>
+                            <h4>Batman Begins</h4>
+                            <p> IMDB : <span>8.2</span> </p><br> 
+                            <p>
+                                Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
+                                traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de
+                                guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De retour chez lui à
+                                Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans
+                                la lutte contre le crime sous le nom de Batman.
+                            </p>
+                        </div>
                     </div>
-                    <img src="./Assets/Logos/icon_flèche_2.png" alt="">
+                    <button class="btn-right">
+                        <img src="./Assets/Logos/icon_flèche_2.png" alt="">
+                    </button>
                 </div>
-                <img src="./Assets/Illustrations/Bathome_ba2.png" alt="">
+                <div class="bande-annonce-image">
+                    <img src="./Assets/Illustrations/Bathome_ba2.png" alt="">
+                </div>
             </div>
         </section>
 
